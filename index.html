@@ -1,33 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ege Ufuk Utku</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Ege Ufuk Utku is an Economics student at Bilkent University interested in microeconometrics, behavioral economics, and game theory.">
+
+  <title>Ege Ufuk Utku | Economics</title>
+
+  <style>
+    :root {
+      --background: #f7f8f5;
+      --text: #17211b;
+      --muted: #59645d;
+      --accent: #185b43;
+      --line: #dce2dd;
+      --tag: #e9f1ed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .name {
+      color: var(--text);
+      font-family: Georgia, serif;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 480px;
+      padding: 100px 0 80px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: end;
+      gap: 70px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin-bottom: 15px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(52px, 7vw, 88px);
+      line-height: 1;
+    }
+
+    .introduction {
+      max-width: 680px;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .featured-links {
+      display: grid;
+    }
+
+    .featured-links a,
+    .profile-links a {
+      padding: 13px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .featured-links a::after,
+    .profile-links a::after {
+      content: "↗";
+      color: var(--accent);
+    }
+
+    .featured-links a:first-child::after {
+      content: "→";
+    }
+
+    .featured-links a:hover,
+    .profile-links a:hover {
+      color: var(--accent);
+    }
+
+    section:not(.hero) {
+      padding: 75px 0;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 50px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .section-content {
+      max-width: 720px;
+    }
+
+    .research-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .research-details {
+      margin: 0 0 20px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .research-description {
+      color: var(--muted);
+    }
+
+    .interests {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .interests li {
+      padding: 8px 13px;
+      border: 1px solid #cbdad1;
+      border-radius: 4px;
+      background: var(--tag);
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .profile-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 30px;
+    }
+
+    footer {
+      padding: 35px 0 50px;
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      header,
+      main,
+      footer {
+        width: calc(100% - 32px);
+      }
+
+      .nav-links a:not(.cv-link) {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 70px 0 60px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      section:not(.hero) {
+        padding: 55px 0;
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .profile-links {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Ege Ufuk Utku</h1>
+  <header>
+    <nav>
+      <a class="name" href="#">Ege Ufuk Utku</a>
 
-  <p>
-    My name is Ege Ufuk Utku, I am an incoming fourth year undergraduate student in Economics at Bilkent University. 
-  <p>
-    
-  <p>
-    I currently work as a research assistant under supervision of Dr. Mustafa Eray Yücel, working on intolerance of uncertainty and future anxiety among university students.
-  <p>
-    
-  <p>
-    My academic interests include microeconometrics, behavioral economics and game theory.
-  </p>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#interests">Interests</a>
+        <a href="#profiles">Profiles</a>
+        <a class="cv-link" href="Ege Ufuk Utku Cv June.pdf">CV</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>Some Useful Links</h2>
+  <main>
 
-  <ul>
-    <li><a href="Ege Ufuk Utku Cv June.pdf">CV</a></li>
-    <li><a href="https://www.researchgate.net/profile/Ege-Utku?ev=hdr_xprf">ResearchGate</a></li>
-    <li><a href="https://scholar.google.com/citations?user=uMyfL0cAAAAJ&hl=tr">Google Scholar</a></li>
-    <li><a href="https://github.com/egeuutku">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/egeutku/">LinkedIn</a></li>
-  </ul>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Economics · Bilkent University</p>
+
+        <h1>Ege Ufuk Utku</h1>
+
+        <p class="introduction">
+          I am an incoming fourth-year undergraduate student in
+          <strong>Economics at Bilkent University</strong>, interested in
+          how individuals make decisions under uncertainty.
+        </p>
+      </div>
+
+      <div class="featured-links">
+        <a href="Ege Ufuk Utku Cv June.pdf">Curriculum Vitae</a>
+
+        <a
+          href="https://scholar.google.com/citations?user=uMyfL0cAAAAJ&hl=en"
+          target="_blank">
+          Google Scholar
+        </a>
+
+        <a
+          href="https://github.com/egeuutku"
+          target="_blank">
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Current Research</h2>
+
+      <div class="section-content">
+        <p class="research-title">
+          Intolerance of Uncertainty and Future Anxiety Among University Students
+        </p>
+
+        <p class="research-details">
+          Research Assistant · Supervised by Dr. Mustafa Eray Yücel
+        </p>
+
+        <p class="research-description">
+          I currently contribute to research examining how university
+          students perceive uncertainty and future anxiety, with a focus
+          on research and experimental design.
+        </p>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+
+      <div class="section-content">
+        <ul class="interests">
+          <li>Microeconometrics</li>
+          <li>Behavioral Economics</li>
+          <li>Game Theory</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="profiles">
+      <h2>Profiles</h2>
+
+      <div class="section-content profile-links">
+        <a
+          href="https://www.researchgate.net/profile/Ege-Utku?ev=hdr_xprf"
+          target="_blank">
+          ResearchGate
+        </a>
+
+        <a
+          href="https://scholar.google.com/citations?user=uMyfL0cAAAAJ&hl=en"
+          target="_blank">
+          Google Scholar
+        </a>
+
+        <a
+          href="https://github.com/egeuutku"
+          target="_blank">
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/egeutku/"
+          target="_blank">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Ege Ufuk Utku</span>
+    <span>Ankara, Türkiye</span>
+  </footer>
 
 </body>
 </html>
